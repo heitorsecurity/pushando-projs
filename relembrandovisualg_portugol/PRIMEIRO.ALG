@@ -3,7 +3,7 @@ var
 msg:caractere
 inicio
       msg <- "Ola, Mundo!"
-      Escreval (msg)
+      Escreval ("Mensagem ", msg)
 //      Escreva ("Me livrei da maldicao!")
 
 fimalgoritmo
