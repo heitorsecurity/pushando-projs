@@ -1,4 +1,4 @@
-import time
+#import time
 
 from tkinter import *
 from tkinter import messagebox
@@ -10,11 +10,17 @@ class MinhaGUI:
         self.janela_principal = Tk() # Criar janela
         self.janela_principal.title('Relógio by heitorsecurity')
         # Criado botão e empacotar botao janela
-        self.botao = Button(self.janela_principal, text='Iniciar', command=self.hello_world)
-        self.botao.pack()
+        self.botao_croini = Button(self.janela_principal, text='Cronometro Iniciar', command=self.hello_world)
+        self.botao_croparar = Button(self.janela_principal, text='Cronometro Parar', command=self.hello_world)
+        self.botao_relogio = Button(self.janela_principal, text='Mostra relógio', command=self.hello_world)
+        self.botao_sair = Button(self.janela_principal, text='Sair', command=self.janela_principal.quit)
+        self.botao_croini.pack(side="bottom")
+        self.botao_croparar.pack(side="bottom")
+        self.botao_relogio.pack(side="bottom")
+        self.botao_sair.pack(side="bottom")
         # Criado botao do relogio e empacotar
         self.lbl = Label(self.janela_principal, font=('calibri', 120, 'bold'),
-                         background='black', foreground='white')
+                         background='white', foreground='black')
         self.lbl.pack(anchor='center')
         self.time() # Iniciar relogio
         self.janela_principal.mainloop() # Rodar a janela principal
