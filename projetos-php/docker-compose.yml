@@ -2,7 +2,7 @@ services:
   application:
     build:
       context: dockerfiles
-      dockerfile: dockerfiles/php/Dockerfile
+      dockerfile: php/Dockerfile
     image: application
     container_name: application
     tty: true
