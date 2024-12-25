@@ -36,8 +36,8 @@ if ntp_tempo is not None:
         dif_str = f"{dif_sec:.2f} segundos"
 
     # Imprima os resultados
-    print(f"NTPC Tempo: {resultado_ntp}")
-    print(f"Meu relogio do PC: {tempo_agora_str}")
-    print(f"Quantos segundos ou milisegundos difere: {dif_str}")
+    print(f"Tempo puxado do NTP: {resultado_ntp}")
+    print(f"Meu relogio da maquina: {tempo_agora_str}")
+    print(f"Quantos segundos ou milisegundos difere um do outro: {dif_str}")
 else:
     print(resultado_ntp)
