@@ -22,3 +22,4 @@ lbl.pack(anchor='center')
 time()
 
 mainloop()
+""" Descartar esse ou usar? """
