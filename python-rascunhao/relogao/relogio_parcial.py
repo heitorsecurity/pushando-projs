@@ -31,7 +31,7 @@ class MinhaGUI:
         # Criado botao do relogio e empacotar
         self.lbl = Label(self.janela_principal, font=('calibri', 120, 'bold'), background='white', foreground='black')
         self.lbl.pack(anchor='center')
-        self.time() # Iniciar relogio
+        #self.time() # Iniciar relogio
         self.janela_principal.mainloop() # Rodar a janela principal
 
     # Função para exibir o tempo com milissegundos
